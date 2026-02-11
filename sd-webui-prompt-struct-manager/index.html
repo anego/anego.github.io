@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZS2YD84JFY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZS2YD84JFY');
+    </script>
     <style>
         :root {
             --bg-color: #121212;
@@ -36,7 +47,7 @@
         header {
             text-align: center;
             padding: 4rem 0;
-            background: linear-gradient(180deg, rgba(18,18,18,0) 0%, rgba(30,30,30,0.5) 100%);
+            background: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, rgba(30, 30, 30, 0.5) 100%);
         }
 
         h1 {
@@ -116,7 +127,7 @@
             height: auto;
             border-radius: 8px;
             border: 1px solid var(--border-color);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
 
         footer {
@@ -126,20 +137,22 @@
             color: var(--text-secondary);
             margin-top: 4rem;
         }
-        
+
         a {
             color: var(--primary-color);
             text-decoration: none;
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
             <h1>Prompt Struct Manager</h1>
             <p class="subtitle">Stable Diffusion WebUI 向けの構造化プロンプト管理ツール。<br>フォルダ構造で整理し、ドラッグ＆ドロップで直感的に操作。</p>
             <div>
-                <a href="https://github.com/nego/sd-webui-prompt-struct-manager" class="btn github-btn" target="_blank">View on GitHub</a>
+                <a href="https://github.com/nego/sd-webui-prompt-struct-manager" class="btn github-btn"
+                    target="_blank">View on GitHub</a>
             </div>
         </div>
     </header>
@@ -178,7 +191,7 @@
                     <h3>Random Group</h3>
                     <p>グループ内のプロンプトからランダムに1つ選んで適用する機能（Dynamic Prompts構文対応）。</p>
                 </div>
-                 <div class="feature-card">
+                <div class="feature-card">
                     <div class="feature-icon">🔍</div>
                     <h3>Performance</h3>
                     <p>大量のプロンプトがあっても高速に動作し、検索機能もスムーズです。</p>
@@ -189,7 +202,8 @@
         <section id="install">
             <h2>Installation</h2>
             <p>Stable Diffusion WebUI の Extensions タブから "Install from URL" を選択し、下記URLを入力してください。</p>
-            <pre style="background: #000; padding: 1rem; border-radius: 4px; overflow-x: auto;"><code>https://github.com/anego/sd-webui-prompt-struct-manager.git</code></pre>
+            <pre
+                style="background: #000; padding: 1rem; border-radius: 4px; overflow-x: auto;"><code>https://github.com/anego/sd-webui-prompt-struct-manager.git</code></pre>
         </section>
     </div>
 
@@ -198,4 +212,5 @@
         <p><a href="../index.html">Back to Projects</a></p>
     </footer>
 </body>
+
 </html>
